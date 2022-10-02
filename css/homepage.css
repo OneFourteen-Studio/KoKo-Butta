@@ -1,0 +1,272 @@
+@font-face {
+    font-family: "amsterdamOne";
+    src: url("../fonts/Amsterdam.ttf");
+    
+}
+
+@font-face {
+    font-family:"agrandirThin";
+    src: url("../fonts/Agrandir-GrandLight.otf")
+}
+
+@font-face {
+    font-family:"agrandirMedium";
+    src: url("../fonts/Agrandir-GrandHeavy.otf")
+}
+* {
+    background: rgba(127, 88, 59, 1);
+    scroll-behavior: smooth;
+    scroll-margin-top: 40px
+}
+
+body {
+    height: 5000px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 100px; 
+}
+
+.scroll-sections {
+    height: 90vh;
+}
+
+/* homepage */
+header{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#nav {
+    display: flex;
+    justify-content: space-around;
+    width: 95vw
+}
+
+#blank-div {
+    width: 400px;
+}
+
+#nav-container {
+    width: 400px;
+    height: 200px;
+}
+
+#nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    font-family: "agrandirThin";
+    font-size: 20px;
+    width: 400px;
+    height: 200px;
+    padding: 50px 0 0 0;
+    margin: 0
+}
+
+#nav-links a {
+    text-decoration: none;
+    color: black;
+}
+
+#logo {
+    height: 200px;
+}
+
+#logo a {
+    text-decoration: none;
+    height: 200px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-self: center;
+}
+
+#logo span {
+    color: white;
+    font-family: "agrandirThin";
+    transform: rotate(351deg);
+    width: 140px;
+    text-align: center;
+    margin: 0 0 -35px 0;
+}
+
+#logo-img {
+    width: 150px;
+    align-self: flex-end;
+}
+
+#titleAndImages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 0 0 100px 0;
+}
+
+#titleAndImages img{
+    height: 250px;
+    background: none;
+}
+
+#left-leaf {
+    margin-right: -15px;
+}
+
+#right-leaf {
+    margin-left: -15px;
+}
+
+
+#homepage-title {
+    margin: 0;
+    padding: 0;
+    height: 262px;
+    width: 530px;
+    background: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#title{
+    text-align: center;
+    font-family: "amsterdamOne";
+    font-size: 82px;
+    font-weight: 100;
+    margin: 0;
+    z-index: 2;
+    height: 262px;
+    background: none;
+}
+
+#slogan {
+    color: white;
+    font-family: "agrandirThin";
+    font-size: 13px;
+    margin: -50px 0 0 0;
+    z-index: 2;
+    background: none;
+    text-align: center;
+    width: 450px;
+}
+
+#getSomeButton a {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    text-decoration: none;
+}
+
+#getSomeButton span{
+    color: white;
+    font-family: "agrandirThin";
+    font-size: 12px;
+}
+
+#getSomeButton i {
+    font-size: 20px;
+    color: white;
+
+}
+/* homepage */
+
+/* our products */
+#our-products {
+    display: flex;
+    flex-flow: row wrap;
+    
+
+}
+/* our products */
+
+/* product image name and price */
+.title {
+    font-family: "amsterdamOne";
+    font-size: 60px;
+    height:20%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 0;
+    font-weight: 100;
+}
+
+#product-container {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+
+.product-img-and-name {
+    font-family: "agrandirMedium";
+    width: 33.3333%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.product-background {
+    background: rgba(177, 111, 70, 1);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    z-index: 1;
+    border-radius: 30px;
+    
+} 
+
+.product-image {
+    height: 50%;
+    width: 50%;
+    background: none;
+    z-index: 2
+}
+
+.name-and-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    width: 50%;
+    
+}
+
+.product-name {
+    font-family: "agrandirMedium";
+    font-size: 18px;
+    width: 70%;
+    text-align: center;
+}
+
+.product-price {
+    font-family: "agrandirThin";
+    width: 40%;
+    text-align: center;
+    font-size: 20px;
+    
+}
+/* product image name and price */
+
+
+#contact{
+    background: green;
+}

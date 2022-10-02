@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KoKo Butta</title>
+    <link rel="stylesheet" href="css/homepage.css">
+    <script src="https://kit.fontawesome.com/11331e8f93.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="scroll-sections">
+        <nav id="nav">
+            <div id="blank-div"></div>
+            <div id="logo">
+                <a href="homepage.html">
+                    <span>KoKo Butta</span>
+                    <img id="logo-img" src="./images/logo.svg">
+                </a>
+            </div>
+            <div id="nav-container">
+                <ul id="nav-links">
+                    <li><a class="scroll-links" id="home-scroll" href="homepage.html">Home</a></li>
+                    <li><a class="scroll-links" id="shop-scroll" href="#our-products">Shop</a></li>
+                    <li><a class="scroll-links" id="contact-scroll" href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section id="titleAndImages">
+            <img  id="left-leaf" src="./images/left leaf.svg" alt="ginko leaf">
+            <div id="homepage-title">
+                <h1 id="title">"KoKo Butta"</h1>
+                <p id="slogan">Everything is 100% handmade, vegan and cruelty free</p>
+            </div>
+            <img id="right-leaf" src="./images/right leaf.svg" alt="ginko leaf">
+        </section>
+
+        <div id="getSomeButton">
+            <a class="scroll-links" href="#our-products">
+                <span>Get some today!</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            
+        </div>
+    </header>
+    <section class="scroll-sections" id="our-products">
+        <h2 class="title">Our Products</h2>
+        <section id="product-container">
+            <section class="product-img-and-name">
+                <div class="product-background">
+                    <img  class="product-image" src="./images/Subject 2.png" alt="product image">
+                </div>
+                <div class="name-and-price">
+                    <h3 class="product-name">Body Scrubs</h3>
+                    <span class="product-price">$10</span>
+                </div>
+                <button class="snipcart-add-item" 
+                data-item-id="body-scrubs"
+                data-item-price="10.00"
+                data-item-name="Body Scrub"
+                data-item-custom1-name="Size"
+                data-item-custom1-options="Small|Large[+2.00]"
+                data-item-custom2-name="Scents"
+                data-item-custom2-options="Peppermint|Mango|Watermelon">
+                Add to cart
+            </button>
+            </section>
+
+            <section class="product-img-and-name">
+                <div class="product-background">
+                    <img  class="product-image" src="./images/Subject 2.png" alt="product image">
+                </div>
+                <div class="name-and-price">
+                    <h3 class="product-name">Body Oils</h3>
+                    <span class="product-price">$13</span>
+                </div>
+                <button class="snipcart-add-item" 
+                data-item-id="body-oils"
+                data-item-price="10.00"
+                data-item-name="Body Oils"
+                data-item-custom1-name="Size"
+                data-item-custom1-options="Small|Large[+3.00]"
+                data-item-custom2-name="Scents"
+                data-item-custom2-options="Peppermint|Mango|Watermelon">
+                Add to cart
+            </button>
+            </section>
+
+            <section class="product-img-and-name">
+                <div class="product-background">
+                    <img  class="product-image" src="./images/Subject 2.png" alt="product image">
+                </div>
+                <div class="name-and-price">
+                    <h3 class="product-name">Body Butters</h3>
+                    <span class="product-price">$15</span>
+                </div>
+                <button class="snipcart-add-item" 
+                data-item-id="body-butters"
+                data-item-price="15.00"
+                data-item-name="Body Butters"
+                data-item-custom1-name="Scents"
+                data-item-custom1-options="Peppermint|Mango|Watermelon">
+                Add to cart
+            </button>
+            </section>
+            
+        </section>
+    </section>
+        
+
+    <section class="scroll-sections" id="contact">
+        <h2 class="title">Contact Us</h2>
+    </section>
+
+</body>
+<script>
+    window.SnipcartSettings = {
+      publicApiKey: "Mzc3YzJmMWEtNmYyMy00OGMyLWFhNjgtZmJmNTUzZWVkMTNhNjM4MDAyMzYzNTEwMTk4MTkx",
+      loadStrategy: "on-user-interaction",
+      version: "3.4.0"
+    };
+  
+    (()=>{var c,d;(d=(c=window.SnipcartSettings).version)!=null||(c.version="3.0");var s,S;(S=(s=window.SnipcartSettings).timeoutDuration)!=null||(s.timeoutDuration=2750);var l,p;(p=(l=window.SnipcartSettings).domain)!=null||(l.domain="cdn.snipcart.com");var w,u;(u=(w=window.SnipcartSettings).protocol)!=null||(w.protocol="https");var f=window.SnipcartSettings.version.includes("v3.0.0-ci")||window.SnipcartSettings.version!="3.0"&&window.SnipcartSettings.version.localeCompare("3.4.0",void 0,{numeric:!0,sensitivity:"base"})===-1,m=["focus","mouseover","touchmove","scroll","keydown"];window.LoadSnipcart=o;document.readyState==="loading"?document.addEventListener("DOMContentLoaded",r):r();function r(){window.SnipcartSettings.loadStrategy?window.SnipcartSettings.loadStrategy==="on-user-interaction"&&(m.forEach(t=>document.addEventListener(t,o)),setTimeout(o,window.SnipcartSettings.timeoutDuration)):o()}var a=!1;function o(){if(a)return;a=!0;let t=document.getElementsByTagName("head")[0],e=document.querySelector("#snipcart"),i=document.querySelector(`src[src^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][src$="snipcart.js"]`),n=document.querySelector(`link[href^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][href$="snipcart.css"]`);e||(e=document.createElement("div"),e.id="snipcart",e.setAttribute("hidden","true"),document.body.appendChild(e)),v(e),i||(i=document.createElement("script"),i.src=`${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.js`,i.async=!0,t.appendChild(i)),n||(n=document.createElement("link"),n.rel="stylesheet",n.type="text/css",n.href=`${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.css`,t.prepend(n)),m.forEach(g=>document.removeEventListener(g,o))}function v(t){!f||(t.dataset.apiKey=window.SnipcartSettings.publicApiKey,window.SnipcartSettings.addProductBehavior&&(t.dataset.configAddProductBehavior=window.SnipcartSettings.addProductBehavior),window.SnipcartSettings.modalStyle&&(t.dataset.configModalStyle=window.SnipcartSettings.modalStyle),window.SnipcartSettings.currency&&(t.dataset.currency=window.SnipcartSettings.currency),window.SnipcartSettings.templatesUrl&&(t.dataset.templatesUrl=window.SnipcartSettings.templatesUrl))}})();
+  </script>
+</html>

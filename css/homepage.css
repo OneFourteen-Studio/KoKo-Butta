@@ -41,7 +41,7 @@
 #header {
     background: url(../images/logo.svg);
     background-repeat: no-repeat;
-    background-position: 100% 225%;
+    background-position: 60% 100%;
     background-size: 40rem
 }
 
@@ -121,7 +121,7 @@
     display: flex;
     justify-content: center;
     flex-flow: column wrap;
-    font-size: 4.5rem;
+    font-size: 3rem;
     height: 100%;
 }
 
@@ -133,9 +133,9 @@
     color: white;
     text-align: center;
     font-family: "AgrandirThin";
-    font-size: .8rem;
+    font-size: .5rem;
     z-index: 2;
-    margin: -70px 0 0 0;
+    margin: -110px 0 0 0;
     height: 5%;
     width: 90%;
     background: none;

@@ -41,7 +41,7 @@
 #header {
     background: url(../images/logo.svg);
     background-repeat: no-repeat;
-    background-position: 50% 210%;
+    background-position: 100% 225%;
     background-size: 40rem
 }
 
@@ -96,7 +96,6 @@
     justify-content: center;
     align-content: center;
     background: none;
-    transform: rotate(-5deg)
 
 }
 

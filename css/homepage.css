@@ -135,9 +135,9 @@
     font-family: "AgrandirThin";
     font-size: .5rem;
     z-index: 2;
-    margin: -110px 0 0 0;
+    margin: -100px 0 0 0;
     height: 5%;
-    width: 90%;
+    width: 100%;
     background: none;
 }
 

@@ -319,6 +319,7 @@ input::placeholder {
     
     #product-container {
         flex-flow: row wrap;
+        height: 50%
 
     
     }

@@ -340,5 +340,10 @@ input::placeholder {
     .product-name-and-price {
         width: 100%;
     }
+
+    .product-button {
+        width: 75%;
+        align-self: center
+    }
     
 }

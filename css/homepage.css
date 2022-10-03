@@ -13,276 +13,201 @@
     font-family:"agrandirMedium";
     src: url("../fonts/Agrandir-GrandHeavy.otf")
 }
-* {
-    background: rgba(127, 88, 59, 1);
-    scroll-behavior: smooth;
-    scroll-margin-top: 40px
+:root {
+    --primary-site-color: #80431A;
+    --secondary-site-color: #FF8B1F;
+    --primary-text-color: black;
+    
+    font-size: 1rem;
+
 }
 
-body {
-    height: 5000px;
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 100px; 
+* {
+    background: var(--primary-site-color);
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
 }
 
 .scroll-sections {
-    height: 90vh;
-}
-
-/* homepage */
-header{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-between;
-    align-items: center;
-
+    scroll-margin-top: 80px;
 }
 
-#nav {
-    display: flex;
-    justify-content: space-between;
-    width: 95vw
+#header {
+    background: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 210%;
+    background-size: 40rem
 }
 
-#blank-div {
-    width: 400px;
-}
-
-#nav-container {
-    width: 450px;
-    height: 200px;
-}
-
-#nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    font-family: "agrandirThin";
-    font-size: 20px;
-    width: 100%;
-    height: 50%;
-    padding: 50px 0 0 0;
-    margin: 0;
-    
-}
-
-#nav-links a {
-    text-decoration: none;
-    color: black;
-}
-
-#logo {
-    height: 200px;
-}
-
-#logo a {
-    text-decoration: none;
-    height: 200px;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-self: center;
-}
-
-#logo span {
-    color: white;
-    font-family: "agrandirThin";
-    transform: rotate(351deg);
-    width: 140px;
-    text-align: center;
-    margin: 0 0 -35px 0;
-}
-
-#logo-img {
-    width: 150px;
-    align-self: flex-end;
-}
-
-#titleAndImages {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: center;
-    padding: 0 0 100px 0;
-}
-
-#titleAndImages img{
-    height: 250px;
-    background: none;
-}
-
-#left-leaf {
-    margin-right: -15px;
-}
-
-#right-leaf {
-    margin-left: -15px;
-}
-
-
-#homepage-title {
-    margin: 0;
-    padding: 0;
-    height: 262px;
-    width: 530px;
-    background: none;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
-#title{
-    text-align: center;
-    font-family: "amsterdamOne";
-    font-size: 82px;
-    font-weight: 100;
-    margin: 0;
-    z-index: 2;
-    height: 262px;
-    background: none;
-}
-
-#slogan {
-    color: white;
-    font-family: "agrandirThin";
-    font-size: 13px;
-    margin: -50px 0 0 0;
-    z-index: 2;
-    background: none;
-    text-align: center;
-    width: 450px;
-}
-
-#getSomeButton a {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    text-decoration: none;
-}
-
-#getSomeButton span{
-    color: white;
-    font-family: "agrandirThin";
-    font-size: 12px;
-}
-
-#getSomeButton i {
-    font-size: 20px;
-    color: white;
-
-}
-/* homepage */
-
-/* our products */
-#our-products {
-    display: flex;
-    flex-flow: row wrap;
-    
-
-}
-/* our products */
-
-/* product image name and price */
-.title {
-    font-family: "amsterdamOne";
-    font-size: 60px;
-    height:20%;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
-    margin: 0;
-    font-weight: 100;
-}
-
-#product-container {
-    width: 100%;
-    height: 80%;
-    display: flex;
-    flex-flow: row wrap;
-    
-}
-
-
-.product-img-and-name {
-    font-family: "agrandirMedium";
-    width: 33.3333%;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.product-background {
-    background: rgba(177, 111, 70, 1);
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    height: 50%;
-    width: 50%;
-    z-index: 1;
-    border-radius: 30px;
-    
-} 
-
-.product-image {
-    height: 50%;
-    width: 50%;
-    background: none;
-    z-index: 2
-}
-
-.name-and-price {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* navigation */
+#nav-container{
     height: 10%;
-    width: 50%;
-    
+    width: 100%;
+    position: fixed;
+    background: none;
 }
 
-.product-name {
-    font-family: "agrandirMedium";
-    font-size: 18px;
-    width: 70%;
-    text-align: center;
-}
-
-.product-price {
+#nav-links-container {
+    height: 100%;
+    list-style: none;
+    background: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     font-family: "agrandirThin";
-    width: 40%;
-    text-align: center;
-    font-size: 20px;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin: 10px;
+
     
+}
+
+.nav-links {
+    background: none
+}
+
+.nav-links a {
+    text-decoration: none;
+    background: none;
+    color: inherit
+}
+
+#cart-link {
+    background: none;
 }
 
 .snipcart-checkout {
-    border-style: none;
-    background: none;
+    fill: white;
+    background: none;;
+}
+
+#header-text-and-img {
+    height: 50%;
+    margin: 60px 0 0 0;
     display: flex;
-    height: 100px;
-    width: 100px;
-    margin-top: -40px;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    background: none;
+    transform: rotate(-5deg)
+
 }
 
-.snipcart-checkout img {
-    width: 100%;
+
+#header-text {
+    height: 75%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background: none;
+}
+
+
+.section-title {
+    font-family: "AmsterdamOne";
+    font-weight: 100;
+    background: none;
+}
+
+#header-title {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    font-size: 4.5rem;
     height: 100%;
-    cursor: pointer;
 }
-/* product image name and price */
+
+.section-p {
+    font-family: "AgrandirThin";
+}
+
+#header-p {
+    color: white;
+    text-align: center;
+    font-family: "AgrandirThin";
+    font-size: .8rem;
+    z-index: 2;
+    margin: -70px 0 0 0;
+    height: 5%;
+    width: 90%;
+    background: none;
+}
 
 
+
+.shop-and-product {
+    text-align: center;
+    margin: 100px 0 0 0
+}
+
+
+
+/* our products */
+#our-products {
+    
+}
+
+#product-container {
+    height: 75%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.product-img-and-name {
+    height: 90%;
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+
+}
+
+.product-img {
+    height: 70%;
+}
+
+.product-name-and-price {
+    height: 30%;
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+
+}
+
+.product-name {
+    height: 50%;
+    text-align: center;
+}
+
+.product-button {
+    height: 50%;
+    border-style: none;
+    border-radius: 20px;
+    background: var(--secondary-site-color);
+    color: white;
+    font-family: "AgrandirThin"
+}
+/* our products */
+
+/* contact us */
 #contact{
     background: green;
+}
+
+@media (min-width: 600px) {
+
 }

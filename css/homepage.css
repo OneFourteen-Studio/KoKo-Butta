@@ -308,6 +308,10 @@ input::placeholder {
     gap: 10px;
 }
 
+#stay-updated-icon-container a {
+    height: 1.875rem ;
+}
+
 
 @media (min-width: 600px) {
 

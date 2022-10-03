@@ -208,6 +208,10 @@ body {
     color: white;
     font-family: "AgrandirThin"
 }
+
+#last-container {
+    display: none;
+}
 /* our products */
 
 /* contact us */
@@ -319,15 +323,18 @@ input::placeholder {
     
     #product-container {
         flex-flow: row wrap;
-        height: 50%
-
-    
+        height: 50%;
+        justify-content: space-evenly;
     }
 
     .product-img-and-name {
         height: 30%;
         width: 45%;
     
+    }
+
+    #last-container {
+        display: flex ;
     }
 
     .product-name-and-price {

@@ -322,8 +322,7 @@ input::placeholder {
 @media (min-width: 375px) {
     
     #product-container {
-        flex-flow: row wrap;
-        height: 50%;
+        flex-flow: row wrap; 
         justify-content: space-evenly;
     }
 

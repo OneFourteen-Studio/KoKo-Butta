@@ -20,7 +20,6 @@
     
     font-size: 1rem;
     background-size: 1rem;
-    padding: 0;
 
 }
 
@@ -48,7 +47,7 @@ body {
 #header {
     background: url(../images/logo.svg);
     background-repeat: no-repeat;
-    background-position: 60% 90%;
+    background-position: 60% 70%;
     background-size: 30rem
 }
 

@@ -186,24 +186,24 @@ body {
     width: 60%;
     align-self: center;
     background-color: #C46A33;
-    background-size: 90%;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: 60%;
+    background-position: center;
     border-radius: 15px
 }
 
 #body-scrub-img {
-    background-image: url(../images/body-butter-pink-transparent.PNG);
+    background-image: url(../images/body-butter-pink.jpeg);
 }
 
 
 #body-oil-img {
-    background-image: url(../images/body-butter-pink-transparent.PNG);
+    background-image: url(../images/body-butter-pink.jpeg);
 }
 
 
 #body-butter-img {
-    background-image: url(../images/body-butter-pink-transparent.PNG);
+    background-image: url(../images/body-butter-pink.jpeg);
 }
 
 .product-name-and-price {

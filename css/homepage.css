@@ -185,6 +185,25 @@ body {
     height: 70%;
     width: 60%;
     align-self: center;
+    background-color: #C46A33;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: 60%;
+    border-radius: 15px
+}
+
+#body-scrub-img {
+    background-image: url(../images/body-butter-pink-transparent.PNG);
+}
+
+
+#body-oil-img {
+    background-image: url(../images/body-butter-pink-transparent.PNG);
+}
+
+
+#body-butter-img {
+    background-image: url(../images/body-butter-pink-transparent.PNG);
 }
 
 .product-name-and-price {

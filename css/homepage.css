@@ -14,9 +14,11 @@
     src: url("../fonts/Agrandir-GrandHeavy.otf")
 }
 :root {
-    --primary-site-color: #80431A;
+    /* --primary-site-color: #80431A; */
+    --primary-site-color: #FFEEE4;
     --secondary-site-color: #FF8B1F;
     --primary-text-color: black;
+    
     --secondary-text-color: #FFEEE4;
     
     font-size: 1rem;
@@ -64,12 +66,12 @@ body {
 #nav-links-container {
     height: 100%;
     list-style: none;
-    background: var(--primary-site-color);
+    background: var(--secondary-site-color);
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: "agrandirThin";
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
     border-radius: 20px;
     border: 1px solid black;
     margin: 10px;
@@ -92,7 +94,7 @@ body {
 }
 
 .snipcart-checkout {
-    fill: var(--secondary-text-color);
+    fill: var(--primary-text-color);
     background: none;;
 }
 
@@ -138,10 +140,10 @@ body {
 }
 
 #header-p {
-    color: var(--secondary-text-color);
+    color: var(--secondary-site-color);
     text-align: center;
     font-family: "AgrandirThin";
-    font-size: .45rem;
+    font-size: .5rem;
     z-index: 2;
     margin: -95px 0 0 0;
     height: 5%;
@@ -217,7 +219,8 @@ body {
 .product-name {
     height: 50%;
     text-align: center;
-    font-size: .7rem
+    font-size: .9rem;
+
 }
 
 .product-button {
@@ -225,7 +228,7 @@ body {
     border-style: none;
     border-radius: 20px;
     background: var(--secondary-site-color);
-    color: white;
+    color: var(--primary-text-color);
     font-family: "AgrandirThin"
 }
 

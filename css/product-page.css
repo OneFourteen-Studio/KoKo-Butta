@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "amsterdamOne";
+    src: url("../fonts/Amsterdam.ttf");
+    
+}
+
+@font-face {
+    font-family:"agrandirThin";
+    src: url("../fonts/Agrandir-GrandLight.otf")
+}
+
+@font-face {
+    font-family:"agrandirMedium";
+    src: url("../fonts/Agrandir-GrandHeavy.otf")
+}
+:root {
+    --primary-site-color: #FFEEE4;
+    --secondary-site-color: #FF8B1F;
+    --primary-text-color: black;
+    
+    --secondary-text-color: #FFEEE4;
+    
+    font-size: 1rem;
+
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+body {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: var(--primary-site-color);
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#product-images-and-name-container {
+    height: 65%;
+    width: 95%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+
+
+#main-image-and-arrow-container {
+    height: 75%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.arrows {
+    height: 100%;
+    width: 7%;
+}
+
+#main-image {
+    height: 100%;
+    width: 75%;
+
+}
+
+#small-product-images {
+    height: 20%;
+    width: 95%;
+    align-self: center;
+}
+
+#small-product-images img {
+    height: 100%;
+}
+
+#product-variants-and-button-container {
+    height: 25%;
+}
+
+.product-images {
+    border-radius: 15px;
+}

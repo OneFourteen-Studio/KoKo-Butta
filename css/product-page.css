@@ -179,6 +179,7 @@ body {
     height: 100%;
     background: none;
     text-align: center;
+    text-align: -webkit-center;
     font-family: "AgrandirThin";
     font-size: .8rem;
     border-radius: 5px;

@@ -24,10 +24,13 @@ scent.addEventListener("change", () => {
   let selectedScent = scent.options[scent.selectedIndex].value
   if(selectedScent === "Tropikal Paradise") {
     selectedMainImage.src = selectedImages[1].src
+    button.setAttribute("data-item-image", selectedImages[1].src)
   } else if (selectedScent === "Sweet Kandy") {
     selectedMainImage.src = selectedImages[2].src
+    button.setAttribute("data-item-image", selectedImages[2].src)
   } else if (selectedScent === "Mango Madness") {
     selectedMainImage.src = selectedImages[3].src
+    button.setAttribute("data-item-image", selectedImages[3].src)
   }
 })
 

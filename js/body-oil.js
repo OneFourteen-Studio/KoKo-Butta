@@ -19,16 +19,6 @@ size.addEventListener("change", () => {
 // product image change
 scent.addEventListener("change", () => {
   button.setAttribute("data-item-custom2-value", scent.value)
-  let selectedMainImage = document.querySelector("#main-image")
-  let selectedImages = document.querySelectorAll(".product-images")
-  let selectedScent = scent.options[scent.selectedIndex].value
-  if(selectedScent === "Tropikal Paradise") {
-    selectedMainImage.src = selectedImages[1].src
-  } else if (selectedScent === "Sweet Kandy") {
-    selectedMainImage.src = selectedImages[2].src
-  } else if (selectedScent === "Mango Madness") {
-    selectedMainImage.src = selectedImages[3].src
-  }
 })
 
 // image change on click

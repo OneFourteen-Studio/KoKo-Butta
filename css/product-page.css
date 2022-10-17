@@ -121,7 +121,7 @@ body {
 
 #main-image {
     height: 100%;
-    width: 80%;
+    width: auto;
 
 }
 
@@ -130,7 +130,6 @@ body {
     width: 100%;
     display: flex;
     gap: 5px;
-    justify-content: start;
     overflow-x: scroll;
 }
 
@@ -162,6 +161,7 @@ body {
 .item-price {
     width: 30%;
     font-family: "AgrandirThin";
+    font-size: 1.6rem;
     align-self: end;
 }
 
@@ -179,7 +179,6 @@ body {
     height: 100%;
     background: none;
     text-align: center;
-    text-align: -webkit-center;
     font-family: "AgrandirThin";
     font-size: .8rem;
     border-radius: 5px;
@@ -196,4 +195,96 @@ body {
     font-family: "AgrandirMedium";
     color: var(--primary-text-color);
     align-self: center
+}
+
+@media screen and (min-width: 575px) {
+    .product-images {
+        width: auto;
+    }
+    
+    #small-product-images {
+        justify-content: center;
+    }
+
+    .product-name {
+        font-size: 2rem;
+    }
+    
+    
+    .item-price {
+        font-size: 2.2rem;
+    }
+
+    .product-variants select {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .product-images {
+        width: 15%;
+    }
+    
+    #small-product-images {
+        justify-content: center;
+    }
+
+    .product-name {
+        font-size: 2.5rem;
+    }
+    
+    
+    .item-price {
+        font-size: 2.7rem;
+    }
+
+    .product-variants select {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .product-images {
+        width: auto;
+    }
+    
+    #small-product-images {
+        justify-content: center;
+    }
+
+    .product-name {
+        font-size: 3rem;
+    }
+    
+    
+    .item-price {
+        font-size: 3rem;
+    }
+
+    .product-variants select {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .product-images {
+        width: auto;
+    }
+    
+    #small-product-images {
+        justify-content: center;
+    }
+
+    .product-name {
+        font-size: 3rem;
+    }
+    
+    
+    .item-price {
+        font-size: 3rem;
+    }
+
+    .product-variants select {
+        font-size: 1.2rem;
+    }
 }

@@ -100,7 +100,6 @@ body {
 
 #header-text-and-img {
     height: 50%;
-    /* margin: 60px 0 0 0; */
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -163,17 +162,17 @@ body {
 #product-container {
     height: 75%;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
 
 }
 
 .product-img-and-name {
-    height: 90%;
+    height: 100%;
     width: 60%;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     padding: 5px 0;
@@ -181,13 +180,13 @@ body {
 }
 
 .product-img {
-    height: 70%;
-    width: 70%;
+    height: 90%;
+    width: 80%;
     align-self: center;
     background-color: #C46A33;
-    background-size: 120%;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 200% 100%;
     border-radius: 15px
 }
 
@@ -206,8 +205,8 @@ body {
 }
 
 .product-name-and-price {
-    height: 30%;
-    width: 50%;
+    height: 15%;
+    width: 100%;
     display: flex;
     flex-flow: column wrap;
     align-content: center;
@@ -377,7 +376,7 @@ input::placeholder {
     
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 575px) {
     #header {
         background-position: center 100px;
         background-size: 40rem
@@ -406,53 +405,29 @@ input::placeholder {
     .product-name {
         font-size: 1rem
     }
+
+    .product-img {
+        height: 90%;
+        width: 70%;
+        background-position: 200% 75%;
+    }
     
 
     #contact-form-container {
         height: 50%;
     
     }
-
-    @media screen and (min-width: 1300px) {
-        #header {
-            background-position: center 150px;
-            background-size: 45rem
-        }
-    
-        #header-text {
-            height: 75%;
-            width: 100%;
-        }
-    
-        #header-title {
-            font-size: 5rem;
-        }
-    
-        #header-p {
-            font-size: .85rem;
-            z-index: 2;
-            margin: -80px 0 0 0;
-            height: 5%;
-        }
-
-        .product-and-contact {
-            font-size: 2rem;
-        }
-    
-        .product-name {
-            font-size: 1rem
-        }
-        
-        #contact-form-container {
-            height: 50%;
-        
-        }
-    }    
-    
     
 }
 
 @media screen and (min-width: 900px) {
+
+    .product-img {
+        height: 90%;
+        width: 50%;
+        background-position: 200% 75%;
+    }
+
     #contact-form-container {
        width: 70%;
     
@@ -462,3 +437,22 @@ input::placeholder {
         height: 2.5rem;
     }
 }
+
+@media screen and (min-width: 1200px) {
+
+    .product-img {
+        height: 100%;
+        width: 35%;
+        background-position: 200% 75%;
+    }
+
+    #contact-form-container {
+       width: 70%;
+    
+    }
+
+    #contact-form div {
+        height: 2.5rem;
+    }
+}
+

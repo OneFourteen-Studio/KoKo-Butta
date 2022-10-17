@@ -1,17 +1,20 @@
 @font-face {
     font-family: "amsterdamOne";
     src: url("../fonts/Amsterdam.ttf");
+    font-display: swap;
     
 }
 
 @font-face {
     font-family:"agrandirThin";
-    src: url("../fonts/Agrandir-GrandLight.otf")
+    src: url("../fonts/Agrandir-GrandLight.otf");
+    font-display: swap;
 }
 
 @font-face {
     font-family:"agrandirMedium";
-    src: url("../fonts/Agrandir-GrandHeavy.otf")
+    src: url("../fonts/Agrandir-GrandHeavy.otf");
+    font-display: swap;
 }
 :root {
     /* --primary-site-color: #80431A; */
@@ -191,17 +194,17 @@ body {
 }
 
 #body-scrub-img {
-    background-image: url(../images/tropical-paradise-product.JPG);
+    background-image: url(../images/tropical-paradise-product.webp);
 }
 
 
 #body-oil-img {
-    background-image: url(../images/tropical-paradise-oil.JPG);
+    background-image: url(../images/tropical-paradise-oil.webp);
 }
 
 
 #body-butter-img {
-    background-image: url(../images/body-butter-green.jpeg);
+    background-image: url(../images/body-butter-green.webp);
 }
 
 .product-name-and-price {
@@ -273,7 +276,7 @@ input::placeholder {
 }
 
 #email input, #message input{
-    width: 98%;
+    width: 95%;
 }
 
 #first-last-name {

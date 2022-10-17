@@ -1,17 +1,20 @@
 @font-face {
     font-family: "amsterdamOne";
     src: url("../fonts/Amsterdam.ttf");
+    font-display: swap;
     
 }
 
 @font-face {
     font-family:"agrandirThin";
-    src: url("../fonts/Agrandir-GrandLight.otf")
+    src: url("../fonts/Agrandir-GrandLight.otf");
+    font-display: swap;
 }
 
 @font-face {
     font-family:"agrandirMedium";
-    src: url("../fonts/Agrandir-GrandHeavy.otf")
+    src: url("../fonts/Agrandir-GrandHeavy.otf");
+    font-display: swap;
 }
 :root {
     --primary-site-color: #FFEEE4;

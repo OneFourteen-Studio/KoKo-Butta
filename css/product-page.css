@@ -207,6 +207,7 @@ body {
     
     #small-product-images {
         justify-content: center;
+        overflow-x: hidden;
     }
 
     .product-name {
